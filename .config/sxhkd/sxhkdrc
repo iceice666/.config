@@ -1,0 +1,95 @@
+
+# Restart sxhkd/bspwm
+super + {_,alt +}r
+	{pkill sxhkd && sxhkd,bspc wm -r}
+
+#
+# System 
+#
+
+# New terminal
+super + t
+	kitty
+
+# Progrom launcher
+super + p
+	rofi -show drun
+
+# Power
+super + alt + ctrl + shift + p
+	rofi -show power-menu -modi power-menu:~/.config/rofi/power-menu
+
+#Clipboard
+super + v
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
+#
+# Window 
+#
+
+# Maximize current/focused window
+super + m
+	bspc desktop -l next
+
+# Swap/focus the window in the given direction
+super +  {_,shift +} {Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Kill window
+super +w 
+	bspc node -k
+
+
+#
+# Desktop 
+#
+
+# swith to the next/prev desktop
+super +shift+ctrl+ {Left,Right}
+	bspc desktop -f {prev,next}.local
+
+# switch to the last desktop
+super +shift+ctrl + Up
+	bspc desktop -f last
+
+# Switch/send to the given desktop
+super + {_,shift+} {1-9,0}
+	bspc {desktop -f ,node -d} '^{1-9,10}'
+
+
+#
+# pre-select
+#
+
+ 
+# Set pre-select direction
+super +ctrl+  {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+
+# Set pre-select ratio
+super + ctrl +{1-9}
+	bspc node -o 0.{1-9}
+
+# Cancel pre-selection
+super + ctrl +space
+	bspc node -p cancel
+
+#
+# resize
+#
+
+# Smart resize, will grow or shrink depending on location.
+# Will always grow for floating nodes.
+super + alt + {Left,Down,Up,Right}
+  n=10; \
+  { d1=left;   d2=right;  dx=-$n; dy=0;   \
+  , d1=bottom; d2=top;    dx=0;   dy=$n;  \
+  , d1=top;    d2=bottom; dx=0;   dy=-$n; \
+  , d1=right;  d2=left;   dx=$n;  dy=0;   \
+  } \
+  bspc node --resize $d1 $dx $dy || bspc node --resize $d2 $dx $dy
+
+
+
+
