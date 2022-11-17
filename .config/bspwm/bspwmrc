@@ -1,6 +1,6 @@
 #! /bin/sh
 
-~/.config/.startup.sh
+~/.startup.sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
