@@ -45,7 +45,7 @@ super +w
 #
 
 # swith to the next/prev desktop
-super +shift+ctrl+ {Left,Right}
+alt +ctrl+ {Left,Right}
 	bspc desktop -f {prev,next}.local
 
 # switch to the last desktop
