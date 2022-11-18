@@ -16,7 +16,7 @@ super + p
 	rofi -show drun
 
 # Power
-super + alt + ctrl + shift + p
+alt + ctrl + shift + p
 	rofi -show power-menu -modi power-menu:~/.config/rofi/power-menu
 
 #Clipboard
