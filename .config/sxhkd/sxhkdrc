@@ -8,12 +8,16 @@ super + {_,alt +}r
 #
 
 # New terminal
-super + t
+super + Return
 	kitty
 
 # Progrom launcher
-super + p
+shift + Return
 	rofi -show drun
+
+# Web browser
+alt + Return
+	microsoft-edge-stable
 
 # Power
 alt + ctrl + shift + p

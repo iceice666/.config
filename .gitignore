@@ -3,7 +3,6 @@
 .cache
 .cargo
 .chewing
-.local
 .pki/nssdb
 .rustup
 .zim
@@ -22,3 +21,7 @@ Downloads
 a.out
 .gitconfig
 arch-cfg
+plum
+
+.local
+!.local/share/fcitx5/rime/default.custom.yaml

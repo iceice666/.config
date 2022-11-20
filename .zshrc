@@ -132,8 +132,11 @@ unset key
 
 [[ $- != *i* ]] && return
 
-alias self='neofetch'
+alias self='neofetch | lolcat'
 alias nv='nvim'
 alias cs='cowsay'
 alias pm='sudo pacman'
+alias lg='lazygit'
+
+
 

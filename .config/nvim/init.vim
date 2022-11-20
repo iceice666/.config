@@ -24,7 +24,10 @@ noremap k j
 noremap I 5k
 noremap K 5j
 
-noremap h i
+noremap h <nop>
+noremap A i
+noremap <C-a> I
+
 
 noremap <LEADER><CR> :nohlsearch<CR> 
 noremap = nzz
@@ -32,7 +35,22 @@ noremap - Nzz
 
 map s <nop>
 map S :w<CR>
-map q :qa<CR>
-map Q :qa!<CR>
-map R :source ~/.config/nvim/init.vim<CR>
+map <C-q> :qa!
+map Q :qa<CR>
+map R :w<CR>:source ~/.config/nvim/init.vim<CR>
+
+
+map sl :set splitright<CR>:vsplit<CR>
+map sj :set nosplitright<CR>:vsplit<CR>
+map si :set nosplitbelow<CR>:split<CR>
+map sk :set splitbelow<CR>:split<CR>
+map sc <C-w>q
+
+map <LEADER>i <C-w>k
+map <LEADER>j <C-w>h
+map <LEADER>k <C-w>j
+map <LEADER>l <C-w>l
+
+map tn :tabe<CR>
+
 
