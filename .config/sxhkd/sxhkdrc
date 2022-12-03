@@ -12,16 +12,20 @@ super + Return
 	kitty
 
 # Progrom launcher
-shift + Return
+alt + Return
 	rofi -show drun
 
 # Web browser
-alt + Return
+shift + Return
 	microsoft-edge-stable
+
+#Windows manager
+super + Tab
+	rofi -show window
 
 # Power
 alt + ctrl + shift + p
-	rofi -show power-menu -modi power-menu:~/.config/rofi/power-menu
+	rofi -show power-menu -modi power-menu:~/.config/rofi/power-menu --no-symbols
 
 #Clipboard
 super + v

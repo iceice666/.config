@@ -9,7 +9,7 @@ loadkeys keys.conf
 # ~/.config/polybar/luanch.sh
 
 picom  &
-fcitx5 &
+pkill fcitx ; fcitx5 &
 blueman-applet &
 polybar &
 greenclip daemon &

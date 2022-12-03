@@ -130,13 +130,12 @@ unset key
 
 # Created by newuser for 5.9
 
-[[ $- != *i* ]] && return
+
+
+
 
 alias self='neofetch | lolcat'
 alias nv='nvim'
 alias cs='cowsay'
 alias pm='sudo pacman'
 alias lg='lazygit'
-
-
-

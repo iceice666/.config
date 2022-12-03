@@ -14,42 +14,36 @@ set incsearch
 set ignorecase
 set smartcase
 
-noremap l l
-noremap j h
-noremap L g_
-noremap J 0
-
-noremap i k
-noremap k j
-noremap I 5k
-noremap K 5j
-
 noremap h <nop>
-noremap A i
-noremap <C-a> I
+noremap j <nop>
+noremap k <nop>
+noremap l <nop>
+
+
+noremap <S-Up> 5k
+noremap <S-Down> 5j
 
 
 noremap <LEADER><CR> :nohlsearch<CR> 
-noremap = nzz
-noremap - Nzz
+noremap <C-Left> nzz
+noremap <C-Right> Nzz
 
-map s <nop>
 map S :w<CR>
-map <C-q> :qa!
-map Q :qa<CR>
+map <C-q> :q!
+map Q :q<CR>
 map R :w<CR>:source ~/.config/nvim/init.vim<CR>
 
 
-map sl :set splitright<CR>:vsplit<CR>
-map sj :set nosplitright<CR>:vsplit<CR>
-map si :set nosplitbelow<CR>:split<CR>
-map sk :set splitbelow<CR>:split<CR>
+map s<Right> :set splitright<CR>:vsplit<CR>
+map s<Left> :set nosplitright<CR>:vsplit<CR>
+map s<Up> :set nosplitbelow<CR>:split<CR>
+map s<Down> :set splitbelow<CR>:split<CR>
 map sc <C-w>q
 
-map <LEADER>i <C-w>k
-map <LEADER>j <C-w>h
-map <LEADER>k <C-w>j
-map <LEADER>l <C-w>l
+map <LEADER><Up> <C-w>k
+map <LEADER><Left> <C-w>h
+map <LEADER><Down> <C-w>j
+map <LEADER><Right> <C-w>l
 
 map tn :tabe<CR>
 

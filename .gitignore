@@ -25,3 +25,32 @@ plum
 
 .local
 !.local/share/fcitx5/rime/default.custom.yaml
+.PlayOnLinux
+.config/VirtualBox
+.config/brinkervii/grapejuice
+.config/cef_user_data/Dictionaries
+.config/lunarclient
+.config/lutris
+.config/netcitadel.com
+.config/pavucontrol-qt
+.config/qBittorrent
+.config/tlpui
+.config/vlc
+.config/QtProject.conf
+.config/mimeapps.list
+.config/user-dirs.dirs
+.config/user-dirs.locale
+.java/fonts
+.lunarclient
+.minecraft
+.steam
+.wine
+Desktop
+Games/genshin-impact
+MinecraftServer
+VirtualBox VMs
+.multimc
+.steampath
+.steampid
+LutrisWine
+PlayOnLinux's virtual drives
