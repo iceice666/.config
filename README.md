@@ -1,14 +1,13 @@
 # My archlinux configs
 
-##Neovim
+## Neovim
 
 ### keybinding
 
-- `h` `j` `k` `l` 
-	Disabled/<nop>
-
-- `Shift` + `Up`/`Down`  
-	Jump 5 lines up/dwon per operation.
+| Keys | Operation |
+|------|-----------|
+| `h` `j` `k` `l` | Disabled / `<nop>` |
+| `Shift` + `Up`/`Down` | Jump 5 lines up/dwon per operation. |
 
 - `Space` + `Enter` 
 	Unhighlight the highlight of searching.
