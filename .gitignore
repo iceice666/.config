@@ -54,3 +54,21 @@ VirtualBox VMs
 .steampid
 LutrisWine
 PlayOnLinux's virtual drives
+.config/autostart
+.config/feather
+.config/r2modman
+.config/r2modmanPlus-local
+.config/menus/applications-merged
+
+.config/sxhkd
+
+gamemode.ini
+.config/unity3d/Unity
+iommu
+temp
+image_file
+VMs
+Games/minecraft-dungeons
+Unity/Hub/Editor/2021.3.15f1
+.config/unityhub
+.config/btop
