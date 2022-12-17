@@ -45,7 +45,6 @@ plum
 .minecraft
 .steam
 .wine
-Desktop
 Games/genshin-impact
 MinecraftServer
 VirtualBox VMs
@@ -73,3 +72,7 @@ Unity/Hub/Editor/2021.3.15f1
 .config/unityhub
 .config/btop
 .config/btop/btop.log
+.config/bless
+.config/flameshot/flameshot.ini
+.config/gtk-2.0
+.config/libvirt/storage

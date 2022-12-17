@@ -12,7 +12,8 @@ rm -r yay-bin
 sudo pacman -S linux-zen linux-zen-header nvidia-dkms nvidia-utils 
 sudo pacman -S xorg-apps xorg-xinit bspwm sxhkd
 sudo pacman -S \
-	picom kitty neofetch lolcat zsh neovim polybar feh rofi lazygit cowsay noto-fonts
+	picom kitty neofetch lolcat zsh neovim polybar feh rofi lazygit cowsay noto-fonts\
+	flameshot
 
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 

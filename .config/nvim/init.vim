@@ -30,7 +30,7 @@ noremap <C-Right> Nzz
 
 map S :w<CR>
 map <C-q> :q!
-map Q :q<CR>
+map Q :x<CR>
 map R :w<CR>:source ~/.config/nvim/init.vim<CR>
 
 
